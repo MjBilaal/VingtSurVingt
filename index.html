@@ -1,70 +1,96 @@
 <!DOCTYPE html>
+
+
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Forum étudiant</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	
-	<body>
-		<header>
-			<div id="logo">
-				<img src="logo.png" alt="Logo du site" />
-				<h1>Forum étudiant</h1>
-			</div>
-			
-			<nav>
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="#">Cours</a></li>
-					<li><a href="#">Études</a></li>
-					<li><a href="#">Vie étudiante</a></li>
-					<li><a href="#">Divers</a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<section>
-			<article>
-				<h1>Bienvenue sur le forum étudiant !</h1>
-				
-				<p>
-					Ce forum est destiné aux étudiants afin qu'ils puissent discuter entre eux de divers sujets.
-					Vous trouverez ici des discussions sur les cours, les études, la vie étudiante, etc.
-					N'hésitez pas à créer votre propre sujet de discussion ou à répondre à ceux des autres !
-				</p>
-			</article>
-			
-			<aside>
-				<h1>Derniers sujets</h1>
-				
-				<h2>Cours</h2>
-				<ul>
-					<li><a href="#">Comment réviser efficacement ?</a></li>
-					<li><a href="#">Les cours en ligne, est-ce une bonne idée ?</a></li>
-					<li><a href="#">Quel est votre cours préféré ?</a></li>
-				</ul>
-				
-				<h2>Études</h2>
-				<ul>
-					<li><a href="#">Quel est votre méthode de travail ?</a></li>
-					<li><a href="#">Travailler en groupe, est-ce une bonne idée ?</a></li>
-					<li><a href="#">Études à l'étranger, pour ou contre ?</a></li>
-				</ul>
-				
-				<h2>Vie étudiante</h2>
-				<ul>
-					<li><a href="#">Où étudier à votre avis ?</a></li>
-					<li><a href="#">Les études, un sacré challenge !</a></li>
-					<li><a href="#">Et après les études ?</a></li>
-				</ul>
-			</aside>
+
+
+<head>
+
+
+<meta charset="utf-8" />
+
+
+<title>forum.fr</title>
+
+
+<link rel="stylesheet" href="forum.css" />
+
+</head>
+
+
+
+<body>
+
+<header>
+	<img src="../images/logo.png" alt="logo" />
+	<h1>Bienvenue sur forum.fr !</h1>
+</header>
+
+<nav>
+	<ul>
+		<li class="active"><a href="#">Accueil</a></li>
+		<li><a href="#">Catégories</a>
+			<ul>
+				<li><a href="#">Mathématique</a></li>
+				<li><a href="#">Sciences</a></li>
+				<li><a href="#">Forums</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Derniers sujets</a></li>
+		<li><a href="#">Membres</a></li>
+	</ul>
+</nav>
+
+<div id="content">
+	<section id="main">
+		<article>
+			<h2>Titre de l'article</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sem sit amet elit vehicula commodo. Nulla auctor ultrices ultrices. Nullam mattis justo eget metus hendrerit dignissim. Aliquam erat volutpat. Sed at lorem in nunc porta tristique. Donec nec adipiscing tortor. Fusce aliquet nisl auctor massa ultrices egestas. Aliquam erat volutpat. Integer eleifend, nisl venenatis consequat iaculis, lectus nisl iaculis nunc, et feugiat ipsum arcu eu nunc. Curabitur ac tellus leo. Maecenas dignissim, nunc eget euismod placerat, ligula tellus eleifend dui, a pulvinar nunc justo sit amet lorem. </p>
+		</article>
+
+		<article>
+			<h2>Titre de l'article</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sem sit amet elit vehicula commodo. Nulla auctor ultrices ultrices. Nullam mattis justo eget metus hendrerit dignissim. Aliquam erat volutpat. Sed at lorem in nunc porta tristique. Donec nec adipiscing tortor. Fusce aliquet nisl auctor massa ultrices egestas. Aliquam erat volutpat. Integer eleifend, nisl venenatis consequat iaculis, lectus nisl iaculis nunc, et feugiat ipsum arcu eu nunc. Curabitur ac tellus leo. Maecenas dignissim, nunc eget euismod placerat, ligula tellus eleifend dui, a pulvinar nunc justo sit amet lorem. </p>
+		</article>
+	</section>
+
+	<aside>
+		<section id="login">
+			<h2>Identifiez-vous</h2>
+
+			<form action="#">
+				<label>Pseudo</label>
+				<input type="text" name="username" />
+
+				<label>Mot de passe</label>
+				<input type="password" name="password" />
+
+				<input type="submit" value="Se connecter" />
+			</form>
+
+			<a href="#">Mot de passe oublié ?</a>
 		</section>
-		
-		<footer>
-			<p>
-				Site créé dans le cadre d'un exercice de formation.
+
+		<section id="who">
+			<h2>Qui est en ligne ?</h2>
+			<p>Il y a 11 utilisateurs en ligne : <br />
+				- 1 administrateur<br />
+				- 2 modérateurs<br />
+				- 8 membres
 			</p>
-		</footer>
-	</body>
+		</section>
+
+		<section id="stats">
+			<h2>Statistiques</h2>
+			<p>Notre site a reçu <strong>12 000</strong> visites depuis sa création.</p>
+		</section>
+	</aside>
+
+	<footer>
+		<p>Copyright @2019 - Forum.fr</p>
+	</footer>
+</div>
+
+</body>
+
 </html>
